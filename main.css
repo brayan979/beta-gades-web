@@ -2,10 +2,18 @@
     width: 100%;
     height: calc(100vh - 4.3rem);
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
+.fondos{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .main_title{
     text-align: center;
     font-size: var(--fs-700);
@@ -13,7 +21,57 @@
 
 }
 
-.fondo_ola-left{
+/* .main_container::after{
+    content: '';
+    background-image: url(img/rolas.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    position: absolute;
+    width: 10rem;
+    height: inherit;
+    z-index: -1;
+    left: 0;
+    margin: 0;
+    padding: 0;
+} */
+.main_container::after{
+    content: '';
+    background-image: url(img/rolas.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main_container::before{
+    content: '';
+    background-image: url(img/rolas.svg);
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-position-x: left;
+    background-position-y: center;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transform: rotate(180deg);
+
+}
+
+/* .fondo_ola-left{
     width: inherit;
     height: inherit;
     position: absolute;
@@ -22,7 +80,7 @@
     z-index: -1;
     margin: 0;
     padding: 0;
-} 
+}  */
 
 /* .fondo_ola-right{
     width: inherit;
@@ -41,9 +99,9 @@
     .main_container{
         height: calc(100vh - 6.85rem);
     }
-    .fondo_ola-left{
+    /* .fondo_ola-left{
         left: 10rem;
-    } 
+    }  */
     
     /* .main_container::after{
         content: '';
@@ -56,5 +114,65 @@
         margin: 0;
         padding: 0;
     } */
+    .fondos::after{
+        content: '';
+        position: absolute;
+        height: inherit;
+        width: 15rem;
+        background-color: #62b0f4;
+        background-position: left;
+        left: 0;
+        z-index: -1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fondos::before{
+        content: '';
+        position: absolute;
+        height: inherit;
+        width: 15rem;
+        background-color: #62b0f4;
+        background-position: left;
+        right: 0;        
+        z-index: -1;
+        margin: 0;
+        padding: 0;
+
+    }
+    .main_container::after{
+        content: '';
+        background-image: url(img/rolas.svg);
+        background-repeat: no-repeat;
+        background-position-x: 15rem;
+        background-position-y: center;
+    
+        background-size: contain;
+        position: absolute;
+        height: inherit;
+        z-index: -1;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    } 
+
+    .main_container::before{
+        content: '';
+        background-image: url(img/rolas.svg);
+        background-repeat: no-repeat;
+        background-position: left; 
+        background-position-x: 15rem;
+        background-position-y: center;
+        background-size: contain;
+        position: absolute;
+        height: inherit;
+        z-index: -1;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        transform: rotate(180deg);
+    
+    }
+    
 
 }
