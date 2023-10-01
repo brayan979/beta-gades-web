@@ -1,0 +1,60 @@
+.main_container{
+    width: 100%;
+    height: calc(100vh - 4.3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main_title{
+    text-align: center;
+    font-size: var(--fs-700);
+    font-weight: 700;
+
+}
+
+.fondo_ola-left{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    object-fit: contain;
+    object-position: left;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+} 
+
+/* .fondo_ola-right{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    object-fit: contain;
+    object-position: left;
+    transform: rotate(180deg);
+    z-index: -1;
+        margin: 0;
+    padding: 0;
+}
+ */
+
+@media (width >=48rem) {
+    .main_container{
+        height: calc(100vh - 6.85rem);
+    }
+    .fondo_ola-left{
+        left: 10rem;
+    } 
+    
+    /* .main_container::after{
+        content: '';
+        position: absolute;
+        background-color: red;
+        width: 10rem;
+        height: inherit;
+        z-index: -1;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    } */
+
+}
