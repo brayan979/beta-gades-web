@@ -1,0 +1,109 @@
+.container_login{
+    width: 100%;
+    height: calc(100vh - 4.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .login_images{
+    width: clamp(22.5rem, 40%, 50rem);
+    height: clamp(25rem, 80%, 75rem);
+    background-color: red;
+} */
+
+.login_title{
+    font-size: 2.5rem;
+}
+.username_text,.password_text{
+    font-size: 1.25rem;
+}
+.login_box{
+    width: clamp(22.5rem, 40%, 50rem);
+    height: clamp(25rem, 80%, 75rem);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid black;
+}
+
+.forgot_password{
+    font-size: 1rem;
+    color: black;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.none{
+    display: none;
+}
+
+.btn_login{
+    padding: 0.75rem 4rem;
+    background-color: #62B0F4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5;
+}
+/* https://www.youtube.com/watch?v=p28CN-KXB3k */
+
+
+.login_password,
+.login_username {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login_password input,
+.login_username input {
+    width: 300px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    padding: 0 15px;
+    border: 2px solid #62B0F4;
+    color: black;
+    outline: none;
+    background: transparent;
+}
+
+.password_text,
+.username_text {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input:focus~.password_text,
+input:valid~.password_text,
+input:focus~.username_text,
+input:valid~.username_text {
+    background-color: white;
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+}
+  
+
+@media (width >=48rem) {
+    .container_login{
+        height: calc(100vh - 6.85rem);
+    }
+    
+}
+
+
+

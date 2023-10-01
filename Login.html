@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+
 
 </head>
 
@@ -21,7 +23,7 @@
                     <img class="logo_menu" src="img/logo.png" alt="Logo aplicacion">
                 </div>
                 <ul class="list-items ">
-                    <li class="items selected"><a href="#">Inicio</a></li>
+                    <li class="items selected"><a href="index.html">Inicio</a></li>
                     <li class="items"><a href="#">Niños</a></li>
                     <li class="items"><a href="#">Evaluación </a></li>
                     <li class="items"><a href="#">Evaluaciones</a></li>
@@ -31,14 +33,34 @@
             </nav>
     </header>
 
-    <main class="main_container">
-        <div class="fondos">
-            <img src="img/logo.png" alt="">
-            <h1 class="main_title">Sistema de ayuda para la detección <br> precoz de transtornos del lenguaje</h1>
-        </div>
+    <main class="container_login">
+
+       <aside class="login_images">
+    
+       </aside>
+
+       <form class="login_box">
+            <h2 class="login_title">Iniciar Sesion</h2>
+            <div class="login_username">
+
+                <input type="text" id="username_text" class="username_input" required>
+                <label for="username_text" class="username_text">Usuario</label>
+
+            </div>
+
+            <div class="login_password">
+                <input type="text" id="username_password" class="password_input" required>
+                <label for="username_password" class="password_text">Contraseña</label>
+
+            </div>
+            <p class="error none">Erro al registrarse</p>
+            <button class="btn_login" type="submit">Acceder</button>
+            <a href="#" class="forgot_password">Olvido su contraseña</a>
+       </form>
     </main>
-   
+
     <script src="main.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
